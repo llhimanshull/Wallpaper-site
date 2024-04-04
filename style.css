@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: anek;
+    src: url(./Aileron-Bold.otf);
+}
+
+@font-face {
+    font-family: aileron;
+    src: url(./Aileron-Regular.otf);
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+.loader,
+.white1,
+.white2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.white1 {
+    background-color: aliceblue;
+}
+
+.white2 {
+    background-color: rgb(191, 212, 232);
+}
+
+.loader video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(35, 42, 49); */
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 212, 232);
+}
+
+.page1 h1,
+.white2 h1,
+.white1 h1 {
+    font-family: anek;
+    font-size: 8vw;
+    width: 79vw;
+    text-transform: uppercase;
+    line-height: 15vh;
+}
+
+.white2 h1 {
+    position: relative;
+    color: rgb(41, 39, 39);
+}
+
+.page1 h1 {
+    color: rgb(41, 39, 39);
+}
+
+.page2 {
+    background-color: rgb(23, 31, 40);
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: .5vw 3vw;
+    z-index: 1;
+}
+nav .side{
+    width: 30vw;
+    height: 100%;
+    justify-content:flex-start ;
+    display: flex;
+    align-items: center;
+    gap: 3.5vw;
+
+}
+nav .side1 a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    letter-spacing: .1vw;
+    text-decoration: none;
+    font-family: anek;
+    background-color:  rgb(23, 31, 40);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .side1 input{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 32px;
+    border: none;
+    background-color: white;
+    color:rgb(41, 39, 39);
+    padding: 1.5vw;
+    opacity: 80%;
+}
+::placeholder{
+    color: rgb(41, 39, 39);
+    text-align: center;
+    font-family: aileron;
+    font-size: .9vw;
+}
+nav .side2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2.5vw;
+}
+nav .side2 a{
+    letter-spacing: .1vw;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: aileron;
+    color: rgb(41, 39, 39);
+    text-transform: capitalize;
+}
+nav .side3{
+    display: flex;
+    justify-content: flex-end;
+}
+nav .side3 a{
+    letter-spacing: .1vw;
+    text-decoration: none;
+    font-size: 1.1vw;
+    font-family: aileron;
+    color: rgb(41, 39, 39);
+    text-transform: capitalize;
+}
+nav .side3 button{
+    width: 8vw;
+    height: 6.5vh;
+    border: none;
+    letter-spacing: .1vw;
+    text-decoration: none;
+    font-size: 1vw;
+    padding: .2vw;
+    font-family: anek;
+    color: rgb(244, 243, 243);
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 32px;
+    line-height: 2.3vh;
+    background-color:rgb(82, 108, 132);
+}
+.page2 {
+    display: flex;
+    flex-direction: column;
+}
+.top_options{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+    padding: 2.5vw;
+    padding-left: 25vw;
+    /* background-color: rgb(216, 73, 73); */
+    gap: 6vw;
+}
+.top_options a{
+    display: flex;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: aileron;
+    color: #e9e1e1;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: .9vw;
+    background-color:rgb(82, 108, 132);
+    width: 8vw;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+}
+
+.img_container{
+    width: 100%;
+    height: 100vh;
+    display: flexbox;
+    padding: 1.2vw 4vw;
+    justify-content: center;
+}
+.img_container img{
+    width: auto;
+    object-fit: cover;
+    height: 18vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+}
+
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(8, 46, 78);
+}
